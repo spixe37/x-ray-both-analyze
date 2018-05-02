@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat bot</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12" id="header">
+                <h1 class="display-1">Качественный и<br>Количественный анализ </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" id="chat_body">
+                <div class="form-group">
+                    <label for="msg_input">Входные данные:</label>
+                    <textarea class="form-control" rows="12" id="msg_input" autofocus placeholder="Write message..."></textarea>
+                </div>
+                <form class="form-group" action="/domy" method="post">
+                    <label for="msg_input">Выходные данные:</label>
+                    <div class="input-group">
+                        <input class="form-control" type="text"  id="msg_out">
+                        <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button" id="send_button">Send</button>
+                    </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" ></script>
+</body>
+</html>

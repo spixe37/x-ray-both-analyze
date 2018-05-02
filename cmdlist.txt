@@ -1,0 +1,3 @@
+gcloud beta functions deploy invspixe --stage-bucket invspixe.appspot.com --trigger-http
+
+https://us-central1-invspixe.cloudfunctions.net/invspixe
